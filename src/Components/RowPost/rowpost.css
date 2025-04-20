@@ -1,0 +1,36 @@
+.row1 {
+    margin-left: 10px;
+    color: antiquewhite;
+    overflow-x: hidden; /* Optional */
+  }
+  
+  .t {
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+    margin-top: -2px;
+    color: #d8a4a4;
+  }
+  
+  .posters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    white-space: nowrap;
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE & Edge */
+  }
+  
+  .posters::-webkit-scrollbar {
+    display: none;                /* Chrome, Safari */
+  }
+  
+  .poster {
+    max-height: 250px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: auto;
+  }
+  
