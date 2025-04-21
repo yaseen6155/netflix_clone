@@ -30,7 +30,8 @@
   .poster {
     max-height: 250px;
     margin-right: 10px;
-    flex-shrink: 0;
-    width: auto;
   }
-  
+  .smallposter{
+    max-height: 100px;
+    margin-right: 10px;
+  }
