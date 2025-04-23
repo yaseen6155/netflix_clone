@@ -1,0 +1,46 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background: #111;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modal-poster {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-info h2 {
+    margin-top: 0;
+  }
+  
+  .play-btn, .close-btn {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  

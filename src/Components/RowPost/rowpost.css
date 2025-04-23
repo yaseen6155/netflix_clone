@@ -1,37 +1,52 @@
 .row1 {
-    margin-left: 10px;
-    color: antiquewhite;
-    overflow-x: hidden; /* Optional */
-  }
-  
-  .t {
-    font-size: 1.5rem;
-    font-weight: 800;
-    padding-bottom: 0.5rem;
-    margin-top: -2px;
-    color: #d8a4a4;
-  }
-  
-  .posters {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: 10px;
-    white-space: nowrap;
-    scrollbar-width: none;        /* Firefox */
-    -ms-overflow-style: none;     /* IE & Edge */
-  }
-  
-  .posters::-webkit-scrollbar {
-    display: none;                /* Chrome, Safari */
-  }
-  
-  .poster {
-    max-height: 250px;
-    margin-right: 10px;
-  }
-  .smallposter{
-    max-height: 100px;
-    margin-right: 10px;
-  }
+  margin-left: 20px;
+  color: #fff;
+}
+
+.t {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #e5e5e5;
+}
+
+.posters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* 👇 Netflix-style poster ratio */
+.poster {
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.poster:hover {
+  transform: scale(1.3);
+}
+
+.smallposter {
+  width: 200px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.smallposter:hover {
+  transform: scale(1.1);
+}
