@@ -1,17 +1,18 @@
-// src/firebase.js
+// src/Components/Login/firebase.js
+
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { fireBase_apiKey,fireBase_projectId } from "../../constants/constants";
 
+// ✅ Your Firebase configuration
 const firebaseConfig = {
-  apiKey: { fireBase_apiKey } ,
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: {fireBase_projectId},
-  storageBucket: `${fireBase_projectId}.appspot.com`,
-  messagingSenderId: "SENDER_ID",
-  appId: "APP_ID"
+  apiKey: "AIzaSyCS7pf90AXJEdRibJwBVcD6I9CGF49Un2c",
+  authDomain: "netflixclone-76403.firebaseapp.com",
+  projectId: "netflixclone-76403",
+  storageBucket: "netflixclone-76403.appspot.com",
+  messagingSenderId: "754442704566",
+  appId: "1:754442704566:web:yourAppIdHere" // replace with actual App ID if you have it
 };
 
-// Initialize Firebase
+// ✅ Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
